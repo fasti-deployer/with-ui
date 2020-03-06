@@ -1,0 +1,46 @@
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='../static/style.css'>
+  <script src='../static/client.js'></script>
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+</head>
+<body>
+<div>
+  <div class='center'>
+    <div class='title'>Classify corona BEERS or corona VIRUSES</div>
+    <p>
+      Use images of corona <strong>beers</strong> or  corona <strong>viruses</strong>>
+	<i class="em em-beer" aria-role="presentation" aria-label="BEER MUG"></i>
+	<i class="em em-beer" aria-role="presentation" aria-label="BEER MUG"></i>
+	<i class="em em-beer" aria-role="presentation" aria-label="BEER MUG"></i>
+    </p>
+	
+    <div class='content'>
+      <div class='no-display'>
+        <input id='file-input'
+               class='no-display'
+               type='file'
+               name='file'
+               accept='image/*'
+               onchange='showPicked(this)'>
+      </div>
+      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+      <div class='upload-label'>
+        <label id='upload-label'>No file chosen</label>
+      </div>
+      <div>
+        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+      </div>
+      <div class='analyze'>
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+      </div>
+      <div class='result-label'>
+        <label id='result-label'></label>
+      </div>
+	<p><strong>DISCLAIMER: We mean no disrespect towards the victims of corona-virus</strong></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
